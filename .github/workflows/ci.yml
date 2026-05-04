@@ -1,9 +1,11 @@
 name: CICD
 
+on:    
+      push:
 jobs: 
         build-and-push:
                   runs-on: ubuntu-latest #GitHub Runner
                   steps:  
                           -users: actions/checkout@v4 # clone the code
 
-                          -users: docker/setup-buildx-action@v4
+                          -users: docker/setup-buildx-action@4
